@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Favorite Music Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Favorite Music Survey</h1>
+    <p id="description">Fill out this survey to connect with others that have similar interests!</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Basic Information</legend>
+        <label id="name-label" for="name">Name
+          <input required type="text" id="name" placeholder="Enter Your Name">
+        </label>
+        <label id="email-label" for="email">Email
+          <input required type="email" id="email" placeholder="Enter Your Email">
+        </label>
+        <label id="number-label" for="number">Age
+          <input required type="number" id="number" min="12" max="150" placeholder="Enter Your Age">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male">
+          <input value="male" id="male" type="radio" name="gender" class="inline" checked />Male
+        </label>
+        <label for="female">
+          <input value="female" id="female" type="radio" name="gender" class="inline" />Female
+        </label>
+        <label for="non-binary">
+          <input value="non-binary" id="non-binary" type="radio" name="gender" class="inline" />Non-Binary
+        </label>
+        <label for="no say">
+          <input value="no say" id="no say" type="radio" name="gender" class="inline" />Other/Prefer Not to Say
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Favorite Music</legend>
+        <label>Favorite Genres<br>
+          <input class="inline" type="checkbox" checked value="pop" >Pop<br>
+          <input class="inline" type="checkbox"  value="rnb" >R&B<br>
+          <input class="inline" type="checkbox"  value="rock" >Rock<br>
+          <input class="inline" type="checkbox"  value="country" >Country<br>
+          <input class="inline" type="checkbox"  value="jazz" >Jazz<br>
+          <input class="inline" type="checkbox"  value="alt" >Alternative<br>
+          <input class="inline" type="checkbox"  value="folk" >Folk<br>
+          <input class="inline" type="checkbox"  value="classical" >Classical<br>
+          <input class="inline" type="checkbox"  value="edm" >EDM<br>
+        </label>
+        <label>Favorite Pop Music Girlie
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="taylor">Taylor Swift</option>
+            <option value="olivia">Olivia Rodrigo</option>
+            <option value="gracie">Gracie Abrams</option>
+            <option value="tate">Tate Mcrae</option>
+            <option value="sabrina">Sabrina Carpenter</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label>Favorite Artist
+          <input type="text" placeholder="Enter Your Favorite Artist">
+        </label>
+        <label for="song">Favorite Album/Song
+          <textarea id="song" name="song" rows="3" cols="30" placeholder="My favorite album/song is ____ by ____ because..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" >
+    </form>
+  </body>
+</html>
